@@ -1,0 +1,697 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #E1CEBB;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.center{
+    text-align: center;
+}
+.fontfam {
+    font-family: "JetBrains Mono", monospace;
+    color: #3a2a22;
+}
+
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-80 {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.my-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+li a {
+    font-size: 13px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-content-bet {
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: #E1CEBB;
+    padding: 12px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    gap: 10px;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.nav-left,
+.nav-right {
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar ul {
+    margin: 0;
+    gap: 12px;
+}
+
+
+
+.nav-left img {
+    width: 130px;
+}
+
+.nav-right img {
+    width: 22px;
+}
+
+/* ---------- head ---------- */
+.clamzy-head {
+    position: relative;
+    overflow: hidden;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.head {
+    padding: 24px 20px 32px;
+    background-color: #3a2a22;
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+}
+
+.head h1 {
+      font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+    font-size: 44px;
+    line-height: 1.1;
+}
+
+.head .tagline {
+    margin: 0 0 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.head .sub {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ---------- clamzy ---------- */
+.pic-product {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.pic-img {
+    width: 100%;
+}
+
+.pic-body {
+    width: 100%;
+    padding: 32px 20px;
+}
+
+.pic-body h2 {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: left;
+    margin:  0 ;
+}
+
+.pic-body p {
+    margin: 0;
+    color: #3a2a22;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.9;
+}
+
+/* ---------- products ---------- */
+.products-title{
+
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 30px;
+}
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features {
+    width: 100%;
+    padding: 10px;
+}
+
+.inner {
+    height: 100%;
+    flex-direction: column;
+    background-color: rgba(227, 198, 168, 0.8);
+    border: 2px solid rgba(187, 167, 146, 0.8);
+    border-radius: 25px;
+    padding: 12px;
+}
+
+.inner img {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.price {
+    float: right;
+    margin: 15px 5px 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #bba792;
+    border-radius: 25px;
+    padding: 12px;
+}
+.cart{
+    margin: 0 5px 5px;
+    margin-top: auto;
+}
+.button-cart{
+     margin: 15px 0 5px;
+    padding: 12px 18px;
+    border: 2px solid #3a2a22;
+    border-radius: 25px;
+    background-color: #3a2a22;
+    color: #E1CEBB;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+.inner h3 {
+    margin: 15px 5px 5px;
+    font-size: 20px;
+}
+
+.inner p {
+    clear: both;
+    margin: 0 5px 10px;
+    font-size: 14px;
+}
+
+/* ---------- benefits ---------- */
+.benefits-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.benefits-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.benefit-inner {
+    display: flex;
+    gap: 16px;
+    border-top: 1px solid #c4b09f;
+    border-bottom: 1px solid #c4b09f;
+    padding: 24px 0;
+    margin-bottom: 24px;
+}
+
+.num {
+    flex: 0 0 36px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.benefit-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.benefit-text h3 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.benefit-text p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #5a4a40;
+}
+
+/* ---------- reviews ---------- */
+.review-title {
+   
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.review-sub {
+    text-align: center;
+    color: #5a4a40;
+    line-height: 1.8;
+    margin: 0 0 30px;
+}
+
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-card img {
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.review-inner {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: white;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate(100%);
+    transition: transform 1s;
+
+
+}
+
+
+
+.review-inner h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.stars {
+    color: #b8741a;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.review-inner p {
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+
+.person-info {
+    font-size: 13px;
+}
+
+.person-info strong,
+.person-info span {
+    display: block;
+}
+
+.person-info span {
+    font-size: 12px;
+    color: #5a4a40;
+}
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    max-width: 1600px;
+    background-color: #3a2a22;
+    color: #E1CEBB;
+    padding: 50px 0 24px;
+
+
+
+}
+
+.footer-top {
+    padding: 20px 0 30px;
+}
+
+.footer-left {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+
+
+.footer-left p {
+    margin: 0;
+    width: 300px;
+    font-size: 20px;
+    line-height: 1.8;
+    padding-bottom: 10px;
+}
+.socials{
+    margin-bottom: 10px ;
+    gap: 22px;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.socials img {
+     width: 50px;
+     border-radius: 50%;
+}
+
+.footer-right {
+    width: 100%;
+    flex-direction: column;
+}
+
+.footer-col {
+    width: 50%;
+    margin: 0 0 20px;
+    color: white;
+
+}
+
+.footer-col h3 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-col p {
+    margin: 0 0 10px;
+    font-size: 12px;
+}
+
+.footer a {
+    color: #E1CEBB;
+    font-size: 13px;
+}
+
+.footer-bottom {
+
+    gap: 20px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(225, 206, 187, 0.2);
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.payments {
+    gap: 12px;
+}
+
+.review-card:hover .review-inner {
+    transform: translate(0);
+}
+
+.pay {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background-color: rgb(203, 195, 195);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.paypal {
+    color: #1a3d8f;
+}
+
+.mastercard {
+    color: #c0392b;
+}
+
+.visa {
+    color: #0b0f50;
+}
+
+@media (hover: none) {
+    .review-card {
+        overflow: visible;
+    }
+
+    .review-inner {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+}
+
+@media (hover: hover) {
+    
+    .button-cart:hover{
+        background-color: transparent;
+        color:#3a2a22 ;
+    }
+    .footer-col h3,
+    .footer-col p,
+    .footer .pay ,
+    .footer .socials{
+        transition: opacity 0.3s, transform 0.3s, color 0.3s;
+    }
+    .footer-col:hover h3,
+    .footer-col:hover p,
+    .footer:hover .pay {
+        opacity: 0.4;
+    }
+
+    .footer-col p:hover,
+    .footer-col h3:hover,
+    .footer .pay:hover
+     {
+        opacity: 1;
+    }
+
+    
+    .footer-col p:hover,
+    .footer-col h3:hover
+    
+     {
+        color: white;
+    }
+
+    .footer .pay:hover {
+        transform: scale(1.08);
+    }
+    .footer .socials :hover {
+        transform: scale(1.08);
+    }
+}
+
+@media (min-width: 640px) {
+
+    .features,
+    .review-card,
+    .benefit {
+        width: 50%;
+    }
+
+    .head h1 {
+        font-size: 48px;
+    }
+
+    .head .tagline {
+        font-size: 22px;
+    }
+
+    .benefits-title,.products-title {
+        font-size: 36px;
+    }
+
+    .review-title {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 768px) {
+    li a {
+        font-size: 16px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+
+   
+
+    .head {
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        width: 29%;
+        padding: 0;
+        background-color: transparent;
+        color: #3a2a22;
+    }
+
+    .head h1 {
+        font-size: 56px;
+        margin-bottom: 16px;
+    }
+
+    .head .tagline {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .head .sub {
+        font-size: 15px;
+    }
+
+    .pic-product {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .pic-img,
+    .pic-body {
+        width: 50%;
+    }
+
+    .pic-body {
+        padding: 48px 32px;
+    }
+
+    .pic-body h2 {
+        font-size: 48px;
+    }
+
+    .pic-body p {
+        font-size: 16px;
+    }
+
+    .features,
+    .review-card {
+        width: 33.33%;
+    }
+
+    .benefits-title,.products-title {
+        font-size: 42px;
+    }
+
+    .benefit-text h3 {
+        font-size: 24px;
+    }
+
+    .review-title {
+        font-size: 37px;
+    }
+        .footer-left,
+    .footer-right {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .head h1 {
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+
+    .head .tagline {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .head .sub {
+        font-size: 20px;
+    }
+
+    .pic-body {
+        padding: 80px 40px;
+    }
+
+    .pic-body h2 {
+        font-size: 64px;
+    }
+
+    .benefits-title {
+        font-size: 51px;
+    }
+
+    .benefit-text h3 {
+        font-size: 29px;
+    }
+
+    .review-title {
+        font-size: 45px;
+    }
+}
